@@ -4,8 +4,16 @@ from google.genai import types
 from PIL import Image
 from io import BytesIO
 
-st.set_page_config(layout="wide")
-
+st.set_page_config(
+  page_title="Virtual Try-On",
+  page_icon=None,
+  layout="wide",
+  menu_items={
+      "Get Help": None,
+      "Report a bug": "https://twitter.com/sageOlamide",
+      "About": None
+  }
+)
 # Title with a link to Gemini 2.0
 st.markdown('# Virtual Try-On with [Gemini 2.0](https://developers.googleblog.com/en/experiment-with-gemini-20-flash-native-image-generation/)') 
 
